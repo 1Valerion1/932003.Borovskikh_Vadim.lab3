@@ -1,74 +1,69 @@
+::selection {
+  background: green;
+  color: white;
+}
 body {
-    margin: 0;
-    font-family: "arial";
-    overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-shrink: 0;
 }
 
-header {
-    width: 100%;
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 10px;  
+main {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
 }
 
-.page {
-    width:100%;
-    max-width:600px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    height: 700px;
+aside {
+  float: left;
+  background-color: red;
+  width: 200px;
+  flex-shrink: 0;
+  height: 900px;
 }
 
-.menu {
-    flex: 0 0 10em;
-    width: 200px;
-    color: white;
-    background-color: red;
-    height: 100hv;
-    padding: 10px;
+div {
+  text-align: justify;
+  float: right;
+  margin: 10px;
 }
 
 ul {
-    text-decoration: underline;
-    padding-left: 10px;
+  list-style: none;
+  color: white;
 }
 
 li {
-   list-style-type: none;
-   line-height: 1.5em;
+  margin-bottom: 20px;
+  margin-right: 40px;
 }
-
 li:hover {
-    background-color: green;
+  background-color: green;
 }
 
-.text {
-    padding: 20px;
-    text-align: justify;
-    display: inline-block;
-}
-p::selection{
-    background-color: green;
-    color:white;
+a {
+  color: white;
 }
 
-span {
-    color: red;
-    font-size: 25px;
+header,
+footer {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+header {
+  font-size: 28px;
+  background-color: green;
 }
 
 footer {
-    padding:5px;
-    color: white;
-    background-color: black;
-    clear: both;
-    text-align: center;
-    
-   
+  background-color: black;
+  clear: both;
 }
+
 span {
-    color: red;
-    font-size: 20px;
+  color: red;
+  font-size: 22px;
 }
